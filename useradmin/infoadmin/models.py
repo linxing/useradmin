@@ -11,7 +11,7 @@ class User(models.Model):
     crt_date = models.DateField()
     due_date = models.DateField()
     price = models.IntegerField()
-    tag = models.CharField(max_length=200)
+    tag = models.CharField(blank=True, max_length=200)
 
     def __unicode__(self):
         return self.username

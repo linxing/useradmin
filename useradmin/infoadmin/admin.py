@@ -4,10 +4,9 @@ from django.contrib import admin
 
 from .models import User
 
-
 @admin.register(User)
 class MembersAdmin(admin.ModelAdmin):
-    list_display = ('username', 'server', 'due_date')
+    list_display = ('username', 'password', 'server', 'due_date')
     list_per_page = 50
     actions_on_bottom = True
     actions_on_top = True
