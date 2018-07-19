@@ -5,12 +5,12 @@ from django.db import models
 
 class User(models.Model):
     id = models.AutoField(primary_key=True)
-    username = models.CharField(max_length=100) # port
+    username = models.CharField(max_length=100)     # port
     password = models.CharField(max_length=100)
     server = models.CharField(max_length=100)
-    crt_date = models.DateTimeField()
-    due_date = models.DateTimeField()
-    price = models.CharField(max_length=10)
+    crt_date = models.DateField()
+    due_date = models.DateField()
+    price = models.IntegerField()
     tag = models.CharField(max_length=200)
 
     def __unicode__(self):
