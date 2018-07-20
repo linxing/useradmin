@@ -20,4 +20,4 @@ class MembersAdmin(admin.ModelAdmin):
     admin.site.site_title = 'UserAdminTitle'
 
 
-# admin.site.register(User)
+# admin.site.register(User,MembersAdmin)
